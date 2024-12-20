@@ -3,9 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="济南商砼混凝土搅拌站有限公司专业提供优质混凝土，商品混凝土销售，搅拌站服务，混凝土制品等。联系我们获取更多信息。">
-    <meta name="keywords" content="混凝土,搅拌站,混凝土销售,商品混凝土,济南混凝土,建筑材料,混凝土搅拌">
-    <title>济南商砼混凝土搅拌站有限公司-专业混凝土生产销售</title>
+    <meta name="description" content="济南钧华商砼混凝土销售公司专业提供优质混凝土，商品混凝土销售，搅拌站服务，混凝土制品等。联系我们获取更多信息。">
+    <meta name="keywords" content="济南混凝土,济南商品混凝土,济南混凝土搅拌站,济南混凝土销售,
+    历下区混凝土,市中区混凝土,历城区混凝土,山东混凝土,
+    济南C30混凝土,济南C35混凝土,济南C40混凝土,
+    济南泵送混凝土,济南商砼,济南建筑混凝土,济南工程混凝土,
+    济南混凝土配合比,济南混凝土制品,济南搅拌站服务,
+    济南混凝土价格,济南混凝土供应">
+    <title>济南钧华商砼混凝土销售中心-专业混凝土生产销售</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         * {
@@ -103,6 +108,10 @@
             padding: 1rem 0;
             margin-top: 2rem;
         }
+        .about-section {
+            padding: 60px 0;
+            background: #fff;
+        }
         .about-container {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -126,9 +135,6 @@
             padding: 10px 0;
         }
         @media (max-width: 768px) {
-            .products, .advantages, .contact-info {
-                grid-template-columns: 1fr;
-            }
             .about-container {
                 grid-template-columns: 1fr;
             }
@@ -136,26 +142,181 @@
                 margin-bottom: 1rem;
             }
         }
+        .latest-news {
+            padding: 60px 0;
+            background-color: #f8f9fa;
+        }
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .news-card {
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .news-card:hover {
+            transform: translateY(-5px);
+        }
+        .news-image {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+        }
+        .news-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        .news-card:hover .news-image img {
+            transform: scale(1.05);
+        }
+        .news-content {
+            padding: 20px;
+        }
+        .news-category {
+            display: inline-block;
+            padding: 4px 12px;
+            background: #e9ecef;
+            color: #495057;
+            border-radius: 15px;
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+        .news-title {
+            font-size: 18px;
+            color: #212529;
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+        .news-excerpt {
+            color: #6c757d;
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        .read-more {
+            color: #0066cc;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            display: inline-block;
+        }
+        .read-more:hover {
+            text-decoration: underline;
+        }
+        .view-all-news {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .view-all-news .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: #0066cc;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: background 0.3s ease;
+        }
+        .view-all-news .btn:hover {
+            background: #0052a3;
+        }
+        /* 顶部导航样式优化 */
+        .top-nav {
+            background: #fff;
+            padding: 12px 0;
+            border-bottom: 1px solid #eee;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+        .top-nav .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .top-nav .logo-text {
+            font-size: 20px;
+            color: #333;
+            text-decoration: none;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+        .top-nav .nav-list {
+            display: flex;
+            gap: 35px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .top-nav .nav-list a {
+            color: #555;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 500;
+            transition: all 0.2s ease;
+            padding: 5px 0;
+            position: relative;
+        }
+        .top-nav .nav-list a:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: #0066cc;
+            bottom: 0;
+            left: 0;
+            transition: width 0.2s ease;
+        }
+        .top-nav .nav-list a:hover {
+            color: #0066cc;
+        }
+        .top-nav .nav-list a:hover:after {
+            width: 100%;
+        }
     </style>
 </head>
 <body>
+    <!-- 顶部导航 -->
+    <div class="top-nav">
+        <div class="container">
+            <a href="index.html" class="logo-text">济南钧华商砼</a>
+            <ul class="nav-list">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="#about">关于我们</a></li>
+                <li><a href="#products">产品服务</a></li>
+                <li><a href="articles/list.html">文章中心</a></li>
+                <li><a href="#contact">联系我们</a></li>
+            </ul>
+        </div>
+    </div>
     <header>
         <div class="container">
-            <h1>济南商砼混凝土搅拌站有限公司</h1>
-            <p>专业的混凝土生产销售服务商</p>
+            <h1>济南钧华商砼混凝土销售中心</h1>
+            <p>专业的混凝土销售服务商</p>
         </div>
     </header>
 
     <main>
-        <section class="section">
+        <section class="about-section" id="about">
             <div class="container">
                 <h2>关于我们</h2>
                 <div class="about-container">
                     <img src="about-image.jpg" alt="济南商砼混凝土搅拌站设备展示" class="about-image">
                     <div class="about-text">
-                        <p>济南商砼混凝土搅拌站有限公司是一家专业的混凝土生产销售企业，拥有先进的混凝土搅拌设备和专业的技术团队。公司成立以来，始终秉承"质量第一、诚信为本"的经营理念，致力于为建筑工程提供优质的混凝土产品和服务。</p>
+                        <p>济南钧华商砼混凝土销售中心是一家专业的混凝土销售企业，拥有先进的混凝土搅拌设备和专业的技术团队。公司成立以来，始终秉承"质量第一、诚信为本"的经营理念，致力于为建筑工程提供优质的混凝土产品和服务。</p>
                         <p>我们配备了现代化的全自动化生产线，引进国际先进的搅拌设备，采用计算机自动控制系统，确保每一批次混凝土的品质稳定可靠。公司拥有各类型混凝土搅拌运输车辆数十台，可以保证混凝土及时送达施工现场。</p>
-                        <p>公司技术力量雄厚，拥有一支经验丰富的专业团队，包括混凝土配合比设计师、质量控制工程师和现场技术服务人员。我们可以根据客户的具体工程需求，提供个性化的混凝土配合比设计方案，并提供全程技术支持服务。</p>
+                        <p>公司技术力量雄厚，拥有一支经验丰富的专业团队，包括混凝土配合比设计师、质量检测工程师和现场技术服务人员。我们可以根据客户的具体工程需求，提供个性化的混凝土配合比设计方案，并提供全程技术支持服务。</p>
                         <p>多年来，我们为济南市众多重点工程项目提供优质混凝土产品，在业内树立了良好的品牌形象，获得了广大客户的信任与支持。我们将继续坚持质量为先、服务至上的理念，为济南的城市建设贡献力量。</p>
                         <p class="contact-highlight">欢迎致电：13156003188</p>
                     </div>
@@ -163,9 +324,53 @@
             </div>
         </section>
 
-        <section class="section">
+        <section class="latest-news">
             <div class="container">
-                <h2>品种齐全</h2>
+                <h2 class="section-title">最新动态</h2>
+                <div class="news-grid">
+                    <div class="news-card">
+                        <div class="news-image">
+                            <img src="images/article1.jpg" alt="行业趋势分析">
+                        </div>
+                        <div class="news-content">
+                            <span class="news-category">行业动态</span>
+                            <h3 class="news-title">2024年济南混凝土行业发展趋势分析</h3>
+                            <p class="news-excerpt">深入分析济南混凝土行业发展趋势，包括历下区、市中区、历城区的市场需求变化...</p>
+                            <a href="articles/industry-trend.html" class="read-more">阅读更多</a>
+                        </div>
+                    </div>
+                    <div class="news-card">
+                        <div class="news-image">
+                            <img src="images/article2.jpg" alt="技术指南">
+                        </div>
+                        <div class="news-content">
+                            <span class="news-category">技术文章</span>
+                            <h3 class="news-title">商品混凝土选型技术指南</h3>
+                            <p class="news-excerpt">详细介绍C30、C35、C40等不同标号混凝土的特点和应用场景...</p>
+                            <a href="articles/technical-guide.html" class="read-more">阅读更多</a>
+                        </div>
+                    </div>
+                    <div class="news-card">
+                        <div class="news-image">
+                            <img src="images/article3.jpg" alt="工程案例">
+                        </div>
+                        <div class="news-content">
+                            <span class="news-category">工程案例</span>
+                            <h3 class="news-title">历下区某大型商业综合体混凝土供应案例</h3>
+                            <p class="news-excerpt">详细介绍济南市历下区大型商业综合体项目的混凝土供应案例...</p>
+                            <a href="articles/project-case.html" class="read-more">阅读更多</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="view-all-news">
+                    <a href="articles/list.html" class="btn">查看更多文章</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="products">
+            <div class="container">
+                <h2>产品类别</h2>
                 <div class="products">
                     <div class="product-card">
                         <img src="product1.jpg" alt="商品混凝土展示" class="product-image">
@@ -214,7 +419,7 @@
             </div>
         </section>
 
-        <section class="section">
+        <section class="section" id="contact">
             <div class="container">
                 <h2>联系我们</h2>
                 <div class="contact-info">
@@ -243,7 +448,7 @@
 
     <footer>
         <div class="container">
-            <p>版权所有 2024 济南商砼混凝土搅拌站有限公司</p>
+            <p>版权所有 2024 济南钧华商砼混凝土销售中心</p>
         </div>
     </footer>
 </body>
