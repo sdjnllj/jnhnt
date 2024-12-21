@@ -2,15 +2,24 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?a5988b5014577e4dbdf885ca62672b8b";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="济南钧华商砼混凝土销售公司专业提供优质混凝土，商品混凝土销售，搅拌站服务，混凝土制品等。联系我们获取更多信息。">
+    <title>济南钧华商砼混凝土有限公司-专业混凝土生产销售</title>
+    <meta name="description" content="济南钧华商砼混凝土有限公司是专业的混凝土生产供应商，提供C30、C35等各型号优质商品混凝土，服务覆盖历下区、市中区、槐荫区等济南各区域。专业团队，品质保证，快速配送。联系电话：18668933108">"
     <meta name="keywords" content="济南混凝土,济南商品混凝土,济南混凝土搅拌站,济南混凝土销售,
-    历下区混凝土,市中区混凝土,历城区混凝土,山东混凝土,
+    历下区混凝土,市中区混凝土,槐荫区混凝土,山东混凝土,
     济南C30混凝土,济南C35混凝土,济南C40混凝土,
     济南泵送混凝土,济南商砼,济南建筑混凝土,济南工程混凝土,
     济南混凝土配合比,济南混凝土制品,济南搅拌站服务,
     济南混凝土价格,济南混凝土供应">
-    <title>济南钧华商砼混凝土销售中心-专业混凝土生产销售</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         * {
@@ -102,11 +111,21 @@
             font-size: 1.2rem;
         }
         footer {
-            background: #1e3c72;
-            color: white;
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
             text-align: center;
-            padding: 1rem 0;
-            margin-top: 2rem;
+        }
+        footer p {
+            margin: 5px 0;
+        }
+        .beian-link {
+            color: #999;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .beian-link:hover {
+            color: #fff;
         }
         .about-section {
             padding: 60px 0;
@@ -142,22 +161,27 @@
                 margin-bottom: 1rem;
             }
         }
+        /* 最新动态样式 */
         .latest-news {
             padding: 60px 0;
-            background-color: #f8f9fa;
+            background: #f8f9fa;
         }
         .news-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(3, 1fr);
             gap: 30px;
             margin-top: 40px;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0 20px;
         }
         .news-card {
-            background: #fff;
+            background: white;
             border-radius: 10px;
             overflow: hidden;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
         }
         .news-card:hover {
             transform: translateY(-5px);
@@ -171,63 +195,58 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            transition: transform 0.3s ease;
+            transition: transform 0.3s;
         }
         .news-card:hover .news-image img {
             transform: scale(1.05);
         }
-        .news-content {
-            padding: 20px;
-        }
-        .news-category {
+        .news-tag {
             display: inline-block;
             padding: 4px 12px;
-            background: #e9ecef;
-            color: #495057;
-            border-radius: 15px;
-            font-size: 12px;
-            margin-bottom: 10px;
+            background: #1e3c72;
+            color: white;
+            border-radius: 4px;
+            font-size: 14px;
+            margin: 15px;
         }
         .news-title {
+            padding: 0 15px;
+            margin: 10px 0;
             font-size: 18px;
-            color: #212529;
-            margin-bottom: 10px;
-            line-height: 1.4;
+            color: #333;
+            font-weight: bold;
         }
         .news-excerpt {
-            color: #6c757d;
+            padding: 0 15px;
+            color: #666;
             font-size: 14px;
             line-height: 1.6;
             margin-bottom: 15px;
-            display: -webkit-box;
-            -webkit-line-clamp: 3;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
         }
         .read-more {
-            color: #0066cc;
-            text-decoration: none;
-            font-size: 14px;
-            font-weight: 500;
             display: inline-block;
+            padding: 0 15px 15px;
+            color: #1e3c72;
+            text-decoration: none;
+            font-weight: 500;
         }
         .read-more:hover {
-            text-decoration: underline;
+            color: #0052a3;
         }
-        .view-all-news {
+        .view-more-container {
             text-align: center;
             margin-top: 40px;
         }
-        .view-all-news .btn {
+        .view-more-btn {
             display: inline-block;
             padding: 12px 30px;
-            background: #0066cc;
-            color: #fff;
+            background: #1e3c72;
+            color: white;
             text-decoration: none;
             border-radius: 25px;
-            transition: background 0.3s ease;
+            transition: background-color 0.3s;
         }
-        .view-all-news .btn:hover {
+        .view-more-btn:hover {
             background: #0052a3;
         }
         /* 顶部导航样式优化 */
@@ -252,14 +271,14 @@
             font-weight: 600;
             letter-spacing: 0.5px;
         }
-        .top-nav .nav-list {
+        .top-nav .nav-links {
             display: flex;
             gap: 35px;
             list-style: none;
             margin: 0;
             padding: 0;
         }
-        .top-nav .nav-list a {
+        .top-nav .nav-links a {
             color: #555;
             text-decoration: none;
             font-size: 15px;
@@ -268,7 +287,7 @@
             padding: 5px 0;
             position: relative;
         }
-        .top-nav .nav-list a:after {
+        .top-nav .nav-links a:after {
             content: '';
             position: absolute;
             width: 0;
@@ -278,11 +297,70 @@
             left: 0;
             transition: width 0.2s ease;
         }
-        .top-nav .nav-list a:hover {
+        .top-nav .nav-links a:hover {
             color: #0066cc;
         }
-        .top-nav .nav-list a:hover:after {
+        .top-nav .nav-links a:hover:after {
             width: 100%;
+        }
+        .top-nav .menu-toggle {
+            display: none;
+            background-color: #fff;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .top-nav .menu-toggle span {
+            display: block;
+            width: 20px;
+            height: 2px;
+            background-color: #333;
+            margin-bottom: 5px;
+        }
+        @media (max-width: 768px) {
+            .top-nav .container {
+                padding: 10px 20px;
+                position: relative;
+            }
+            .top-nav .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: white;
+                flex-direction: column;
+                padding: 20px;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+                text-align: center;
+                z-index: 1000;
+            }
+            .top-nav .nav-links.active {
+                display: flex;
+            }
+            .top-nav .nav-links a {
+                padding: 15px 0;
+                border-bottom: 1px solid #eee;
+            }
+            .top-nav .nav-links a:last-child {
+                border-bottom: none;
+            }
+            .top-nav .menu-toggle {
+                display: block;
+                z-index: 1001;
+            }
+            .top-nav .menu-toggle.active span:nth-child(1) {
+                transform: rotate(45deg) translate(5px, 5px);
+            }
+            .top-nav .menu-toggle.active span:nth-child(2) {
+                opacity: 0;
+            }
+            .top-nav .menu-toggle.active span:nth-child(3) {
+                transform: rotate(-45deg) translate(7px, -7px);
+            }
+            .top-nav .menu-toggle span {
+                transition: all 0.3s ease;
+            }
         }
     </style>
 </head>
@@ -291,18 +369,23 @@
     <div class="top-nav">
         <div class="container">
             <a href="index.html" class="logo-text">济南钧华商砼</a>
-            <ul class="nav-list">
-                <li><a href="index.html">首页</a></li>
-                <li><a href="#about">关于我们</a></li>
-                <li><a href="#products">产品服务</a></li>
-                <li><a href="articles/list.html">文章中心</a></li>
-                <li><a href="#contact">联系我们</a></li>
-            </ul>
+            <button class="menu-toggle" aria-label="菜单">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav-links">
+                <a href="index.html">首页</a>
+                <a href="#about">关于我们</a>
+                <a href="#products">产品服务</a>
+                <a href="articles/list.html">新闻动态</a>
+                <a href="#contact" class="contact-btn">联系我们</a>
+            </nav>
         </div>
     </div>
     <header>
         <div class="container">
-            <h1>济南钧华商砼混凝土销售中心</h1>
+            <h1>济南钧华商砼混凝土有限公司</h1>
             <p>专业的混凝土销售服务商</p>
         </div>
     </header>
@@ -314,11 +397,11 @@
                 <div class="about-container">
                     <img src="about-image.jpg" alt="济南商砼混凝土搅拌站设备展示" class="about-image">
                     <div class="about-text">
-                        <p>济南钧华商砼混凝土销售中心是一家专业的混凝土销售企业，拥有先进的混凝土搅拌设备和专业的技术团队。公司成立以来，始终秉承"质量第一、诚信为本"的经营理念，致力于为建筑工程提供优质的混凝土产品和服务。</p>
+                        <p>济南钧华商砼混凝土有限公司是一家专业的混凝土销售企业，拥有先进的混凝土搅拌设备和专业的技术团队。公司成立以来，始终秉承"质量第一、诚信为本"的经营理念，致力于为建筑工程提供优质的混凝土产品和服务。</p>
                         <p>我们配备了现代化的全自动化生产线，引进国际先进的搅拌设备，采用计算机自动控制系统，确保每一批次混凝土的品质稳定可靠。公司拥有各类型混凝土搅拌运输车辆数十台，可以保证混凝土及时送达施工现场。</p>
                         <p>公司技术力量雄厚，拥有一支经验丰富的专业团队，包括混凝土配合比设计师、质量检测工程师和现场技术服务人员。我们可以根据客户的具体工程需求，提供个性化的混凝土配合比设计方案，并提供全程技术支持服务。</p>
                         <p>多年来，我们为济南市众多重点工程项目提供优质混凝土产品，在业内树立了良好的品牌形象，获得了广大客户的信任与支持。我们将继续坚持质量为先、服务至上的理念，为济南的城市建设贡献力量。</p>
-                        <p class="contact-highlight">欢迎致电：13156003188</p>
+                        <p class="contact-highlight">欢迎致电：18668933108</p>
                     </div>
                 </div>
             </div>
@@ -329,41 +412,29 @@
                 <h2 class="section-title">最新动态</h2>
                 <div class="news-grid">
                     <div class="news-card">
-                        <div class="news-image">
-                            <img src="images/article1.jpg" alt="行业趋势分析">
-                        </div>
-                        <div class="news-content">
-                            <span class="news-category">行业动态</span>
-                            <h3 class="news-title">2024年济南混凝土行业发展趋势分析</h3>
-                            <p class="news-excerpt">深入分析济南混凝土行业发展趋势，包括历下区、市中区、历城区的市场需求变化...</p>
-                            <a href="articles/industry-trend.html" class="read-more">阅读更多</a>
-                        </div>
+                        <img src="images/article1.jpg" loading="lazy" alt="济南混凝土行业发展趋势" class="news-image">
+                        <span class="news-tag">行业动态</span>
+                        <h3 class="news-title">2024年济南混凝土行业发展趋势分析</h3>
+                        <p class="news-excerpt">随着济南市城市建设的快速发展，混凝土行业迎来了新的发展机遇。本文从多个角度分析2024年济南混凝土行业的发展趋势。</p>
+                        <a href="articles/industry-trend.html" class="read-more">阅读更多</a>
                     </div>
                     <div class="news-card">
-                        <div class="news-image">
-                            <img src="images/article2.jpg" alt="技术指南">
-                        </div>
-                        <div class="news-content">
-                            <span class="news-category">技术文章</span>
-                            <h3 class="news-title">商品混凝土选型技术指南</h3>
-                            <p class="news-excerpt">详细介绍C30、C35、C40等不同标号混凝土的特点和应用场景...</p>
-                            <a href="articles/technical-guide.html" class="read-more">阅读更多</a>
-                        </div>
+                        <img src="images/article2.jpg" loading="lazy" alt="商品混凝土选型技术指南" class="news-image">
+                        <span class="news-tag">技术指南</span>
+                        <h3 class="news-title">商品混凝土选型技术指南</h3>
+                        <p class="news-excerpt">详细介绍不同标号混凝土的特点和应用场景，包括抗压强度、抗渗性、和易性等性能指标。</p>
+                        <a href="articles/technical-guide.html" class="read-more">阅读更多</a>
                     </div>
                     <div class="news-card">
-                        <div class="news-image">
-                            <img src="images/article3.jpg" alt="工程案例">
-                        </div>
-                        <div class="news-content">
-                            <span class="news-category">工程案例</span>
-                            <h3 class="news-title">历下区某大型商业综合体混凝土供应案例</h3>
-                            <p class="news-excerpt">详细介绍济南市历下区大型商业综合体项目的混凝土供应案例...</p>
-                            <a href="articles/project-case.html" class="read-more">阅读更多</a>
-                        </div>
+                        <img src="images/article3.jpg" loading="lazy" alt="历下区商业综合体项目案例" class="news-image">
+                        <span class="news-tag">工程案例</span>
+                        <h3 class="news-title">历下区某大型商业综合体混凝土供应案例</h3>
+                        <p class="news-excerpt">本案例详细介绍济南市历下区某大型商业综合体项目的混凝土供应情况，总建筑面积超过20万平方米。</p>
+                        <a href="articles/project-case.html" class="read-more">阅读更多</a>
                     </div>
                 </div>
-                <div class="view-all-news">
-                    <a href="articles/list.html" class="btn">查看更多文章</a>
+                <div class="view-more-container">
+                    <a href="articles/list.html" class="view-more-btn">查看更多文章</a>
                 </div>
             </div>
         </section>
@@ -436,8 +507,8 @@
                         
                     </div>
                     <div class="contact-card">
-                        <h3>历城区</h3>
-                        <p>地址：济南市历城区旅游路港沟</p>
+                        <h3>槐荫区</h3>
+                        <p>地址：济南市槐荫区经十西路</p>
                         <p>电话：18668933108</p>
                         
                     </div>
@@ -448,8 +519,37 @@
 
     <footer>
         <div class="container">
-            <p>版权所有 2024 济南钧华商砼混凝土销售中心</p>
+            <p>版权所有 2024 济南钧华商砼混凝土有限公司</p>
+            <p><a href="https://beian.miit.gov.cn/" target="_blank" class="beian-link">鲁ICP备17017128号-4</a></p>
         </div>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+            
+            menuToggle.addEventListener('click', function() {
+                menuToggle.classList.toggle('active');
+                navLinks.classList.toggle('active');
+            });
+
+            // 点击导航链接后自动关闭菜单
+            const links = document.querySelectorAll('.nav-links a');
+            links.forEach(link => {
+                link.addEventListener('click', () => {
+                    menuToggle.classList.remove('active');
+                    navLinks.classList.remove('active');
+                });
+            });
+
+            // 点击页面其他地方关闭菜单
+            document.addEventListener('click', function(event) {
+                if (!event.target.closest('.top-nav')) {
+                    menuToggle.classList.remove('active');
+                    navLinks.classList.remove('active');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
