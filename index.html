@@ -13,13 +13,9 @@
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>济南钧华商砼混凝土有限公司-专业混凝土生产销售</title>
-    <meta name="description" content="济南钧华商砼混凝土有限公司是专业的混凝土生产供应商，提供C30、C35等各型号优质商品混凝土，服务覆盖历下区、市中区、槐荫区等济南各区域。专业团队，品质保证，快速配送。联系电话：18668933108">"
-    <meta name="keywords" content="济南混凝土,济南商品混凝土,济南混凝土搅拌站,济南混凝土销售,
-    历下区混凝土,市中区混凝土,槐荫区混凝土,山东混凝土,
-    济南C30混凝土,济南C35混凝土,济南C40混凝土,
-    济南泵送混凝土,济南商砼,济南建筑混凝土,济南工程混凝土,
-    济南混凝土配合比,济南混凝土制品,济南搅拌站服务,
-    济南混凝土价格,济南混凝土供应">
+    <meta name="description" content="济南钧华商砼混凝土搅拌站有限公司是专业的混凝土生产供应商，提供C30、C35等各型号优质商品混凝土，服务覆盖历下区、市中区、槐荫区等济南各区域。专业团队，品质保证，快速配送。联系电话：18668933108">"
+    <meta name="keywords" content="济南混凝土,济南混凝土公司,济南商品混凝土,济南混凝土搅拌站,济南混凝土销售,历下区混凝土,市中区混凝土,槐荫区混凝土,历下区混凝土搅拌站,市中区混凝土搅拌站,槐荫区混凝土搅拌站,山东混凝土搅拌站,
+    济南C30混凝土,济南C35混凝土,济南C40混凝土,济南泵送混凝土,济南商砼,济南建筑混凝土,济南工程混凝土,济南混凝土配合比,济南混凝土制品,济南搅拌站服务,混凝土搅拌站,济南混凝土价格,济南混凝土供应">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         * {
@@ -168,13 +164,9 @@
         }
         .news-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
             margin-top: 40px;
-            max-width: 1200px;
-            margin-left: auto;
-            margin-right: auto;
-            padding: 0 20px;
         }
         .news-card {
             background: white;
@@ -185,6 +177,10 @@
         }
         .news-card:hover {
             transform: translateY(-5px);
+        }
+        .news-card a {
+            text-decoration: none;
+            color: inherit;
         }
         .news-image {
             width: 100%;
@@ -200,6 +196,9 @@
         .news-card:hover .news-image img {
             transform: scale(1.05);
         }
+        .news-content {
+            padding: 20px;
+        }
         .news-tag {
             display: inline-block;
             padding: 4px 12px;
@@ -207,31 +206,35 @@
             color: white;
             border-radius: 4px;
             font-size: 14px;
-            margin: 15px;
+            margin-bottom: 10px;
         }
         .news-title {
-            padding: 0 15px;
-            margin: 10px 0;
             font-size: 18px;
             color: #333;
-            font-weight: bold;
+            margin-bottom: 10px;
+            line-height: 1.4;
         }
         .news-excerpt {
-            padding: 0 15px;
             color: #666;
             font-size: 14px;
-            line-height: 1.6;
             margin-bottom: 15px;
+            line-height: 1.6;
         }
-        .read-more {
-            display: inline-block;
-            padding: 0 15px 15px;
+        .news-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #999;
+            font-size: 14px;
+        }
+        .news-read-more {
             color: #1e3c72;
-            text-decoration: none;
             font-weight: 500;
         }
-        .read-more:hover {
-            color: #0052a3;
+        @media (max-width: 768px) {
+            .news-grid {
+                grid-template-columns: 1fr;
+            }
         }
         .view-more-container {
             text-align: center;
@@ -245,9 +248,10 @@
             text-decoration: none;
             border-radius: 25px;
             transition: background-color 0.3s;
+            font-size: 16px;
         }
         .view-more-btn:hover {
-            background: #0052a3;
+            background: #2a5298;
         }
         /* 顶部导航样式优化 */
         .top-nav {
@@ -376,7 +380,7 @@
             </button>
             <nav class="nav-links">
                 <a href="index.html">首页</a>
-                <a href="#about">关于我们</a>
+                <a href="#about">公司简介</a>
                 <a href="#products">产品服务</a>
                 <a href="articles/list.html">新闻动态</a>
                 <a href="#contact" class="contact-btn">联系我们</a>
@@ -393,11 +397,11 @@
     <main>
         <section class="about-section" id="about">
             <div class="container">
-                <h2>关于我们</h2>
+                <h2>公司简介</h2>
                 <div class="about-container">
                     <img src="about-image.jpg" alt="济南商砼混凝土搅拌站设备展示" class="about-image">
                     <div class="about-text">
-                        <p>济南钧华商砼混凝土有限公司是一家专业的混凝土销售企业，拥有先进的混凝土搅拌设备和专业的技术团队。公司成立以来，始终秉承"质量第一、诚信为本"的经营理念，致力于为建筑工程提供优质的混凝土产品和服务。</p>
+                        <p>济南钧华商砼混凝土搅拌站有限公司是一家专业的混凝土销售企业，拥有先进的混凝土搅拌设备和专业的技术团队。公司成立以来，始终秉承"质量第一、诚信为本"的经营理念，致力于为建筑工程提供优质的混凝土产品和服务。</p>
                         <p>我们配备了现代化的全自动化生产线，引进国际先进的搅拌设备，采用计算机自动控制系统，确保每一批次混凝土的品质稳定可靠。公司拥有各类型混凝土搅拌运输车辆数十台，可以保证混凝土及时送达施工现场。</p>
                         <p>公司技术力量雄厚，拥有一支经验丰富的专业团队，包括混凝土配合比设计师、质量检测工程师和现场技术服务人员。我们可以根据客户的具体工程需求，提供个性化的混凝土配合比设计方案，并提供全程技术支持服务。</p>
                         <p>多年来，我们为济南市众多重点工程项目提供优质混凝土产品，在业内树立了良好的品牌形象，获得了广大客户的信任与支持。我们将继续坚持质量为先、服务至上的理念，为济南的城市建设贡献力量。</p>
@@ -412,25 +416,52 @@
                 <h2 class="section-title">最新动态</h2>
                 <div class="news-grid">
                     <div class="news-card">
-                        <img src="images/article1.jpg" loading="lazy" alt="济南混凝土行业发展趋势" class="news-image">
-                        <span class="news-tag">行业动态</span>
-                        <h3 class="news-title">2024年济南混凝土行业发展趋势分析</h3>
-                        <p class="news-excerpt">随着济南市城市建设的快速发展，混凝土行业迎来了新的发展机遇。本文从多个角度分析2024年济南混凝土行业的发展趋势。</p>
-                        <a href="articles/industry-trend.html" class="read-more">阅读更多</a>
+                        <a href="articles/quality-management.html">
+                            <div class="news-image">
+                                <img src="images/quality-management.jpg" alt="济南混凝土企业如何提升产品质量管理" loading="lazy">
+                            </div>
+                            <div class="news-content">
+                                <div class="news-tag">技术管理</div>
+                                <h3 class="news-title">济南混凝土企业如何提升产品质量管理</h3>
+                                <p class="news-excerpt">深入分析济南混凝土企业如何通过完善质量管理体系、原材料把控、生产过程监控等方面提升产品质量。</p>
+                                <div class="news-meta">
+                                    <span class="news-date">2025-03-12</span>
+                                    <span class="news-read-more">阅读更多 →</span>
+                                </div>
+                            </div>
+                        </a>
                     </div>
                     <div class="news-card">
-                        <img src="images/article2.jpg" loading="lazy" alt="商品混凝土选型技术指南" class="news-image">
-                        <span class="news-tag">技术指南</span>
-                        <h3 class="news-title">商品混凝土选型技术指南</h3>
-                        <p class="news-excerpt">详细介绍不同标号混凝土的特点和应用场景，包括抗压强度、抗渗性、和易性等性能指标。</p>
-                        <a href="articles/technical-guide.html" class="read-more">阅读更多</a>
+                        <a href="articles/green-technology.html">
+                            <div class="news-image">
+                                <img src="images/green-tech.jpg" alt="济南混凝土公司绿色环保新技术应用分析" loading="lazy">
+                            </div>
+                            <div class="news-content">
+                                <div class="news-tag">技术创新</div>
+                                <h3 class="news-title">济南混凝土公司绿色环保新技术应用分析</h3>
+                                <p class="news-excerpt">详细分析济南混凝土公司在环保技术创新方面的最新实践，包括新型环保材料应用、节能减排措施和智能化生产等内容。</p>
+                                <div class="news-meta">
+                                    <span class="news-date">2025-03-12</span>
+                                    <span class="news-read-more">阅读更多 →</span>
+                                </div>
+                            </div>
+                        </a>
                     </div>
                     <div class="news-card">
-                        <img src="images/article3.jpg" loading="lazy" alt="历下区商业综合体项目案例" class="news-image">
-                        <span class="news-tag">工程案例</span>
-                        <h3 class="news-title">历下区某大型商业综合体混凝土供应案例</h3>
-                        <p class="news-excerpt">本案例详细介绍济南市历下区某大型商业综合体项目的混凝土供应情况，总建筑面积超过20万平方米。</p>
-                        <a href="articles/project-case.html" class="read-more">阅读更多</a>
+                        <a href="articles/project-case.html">
+                            <div class="news-image">
+                                <img src="images/article2.jpg" alt="济南某大型商业综合体项目施工案例" loading="lazy">
+                            </div>
+                            <div class="news-content">
+                                <div class="news-tag">项目案例</div>
+                                <h3 class="news-title">济南某大型商业综合体项目施工案例</h3>
+                                <p class="news-excerpt">展示我司在大型商业项目中的混凝土供应及技术支持服务案例。</p>
+                                <div class="news-meta">
+                                    <span class="news-date">2024-12-20</span>
+                                    <span class="news-read-more">阅读更多 →</span>
+                                </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div class="view-more-container">
@@ -495,19 +526,19 @@
                 <h2>联系我们</h2>
                 <div class="contact-info">
                     <div class="contact-card">
-                        <h3>历下区</h3>
+                        <h3>历下区搅拌站</h3>
                         <p>地址：济南市历下区花园东路</p>
                         <p>电话：18668933108</p>
                         
                     </div>
                     <div class="contact-card">
-                        <h3>市中区</h3>
+                        <h3>市中区搅拌站</h3>
                         <p>地址：济南市市中区十六里河</p>
                         <p>电话：18668933108</p>
                         
                     </div>
                     <div class="contact-card">
-                        <h3>槐荫区</h3>
+                        <h3>槐荫区搅拌站</h3>
                         <p>地址：济南市槐荫区经十西路</p>
                         <p>电话：18668933108</p>
                         
@@ -519,7 +550,7 @@
 
     <footer>
         <div class="container">
-            <p>版权所有 2024 济南钧华商砼混凝土有限公司</p>
+            <p>版权所有 2024 济南钧华商砼混凝土搅拌站有限公司</p>
             <p><a href="https://beian.miit.gov.cn/" target="_blank" class="beian-link">鲁ICP备17017128号-4</a></p>
         </div>
     </footer>

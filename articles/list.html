@@ -2,6 +2,15 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?a5988b5014577e4dbdf885ca62672b8b";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>文章列表 - 济南钧华商砼混凝土销售中心</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -70,9 +79,10 @@
             border: none;
             border-radius: 4px;
             background: #f0f0f0;
-            color: #333;
-            cursor: pointer;
-            transition: background 0.3s ease;
+            color: #999;
+            pointer-events: none;
+            cursor: default;
+            opacity: 0.8;
         }
         .category-filters button.active {
             background: #0066cc;
@@ -88,50 +98,156 @@
             margin: 0 5px;
             border-radius: 4px;
             background: #f0f0f0;
-            color: #333;
+            color: #999;
             text-decoration: none;
+            pointer-events: none;
+            cursor: default;
+            opacity: 0.8;
         }
         .pagination a.active {
             background: #0066cc;
             color: #fff;
         }
+        /* 导航栏样式 */
+        .nav-bar {
+            background-color: #f8f9fa;
+            padding: 15px 0;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .nav-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-logo {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #333;
+            text-decoration: none;
+        }
+        .nav-logo:hover {
+            color: #007bff;
+        }
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+        .nav-links a {
+            color: #666;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+        }
+        .nav-links a:hover {
+            background-color: #e9ecef;
+            color: #007bff;
+        }
     </style>
 </head>
 <body>
     <!-- 导航栏 -->
-    <nav>
-        <!-- 这里包含网站的导航栏 -->
+    <nav class="nav-bar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">济南钧华商砼</a>
+            <div class="nav-links">
+                <a href="../index.html"><i class="fas fa-home"></i> 首页</a>
+                <a href="list.html"><i class="fas fa-list"></i> 文章列表</a>
+            </div>
+        </div>
     </nav>
 
     <!-- 文章列表 -->
     <div class="articles-container">
-        <h1>文章中心</h1>
+        <h1>技术文章与行业动态</h1>
         
         <!-- 分类筛选 -->
         <div class="category-filters">
             <button class="active">全部</button>
+            <button>技术指南</button>
+            <button>项目案例</button>
             <button>行业动态</button>
-            <button>技术文章</button>
-            <button>工程案例</button>
-            <button>公司新闻</button>
         </div>
 
         <!-- 文章列表 -->
         <div class="article-list">
-            <!-- 文章卡片示例 -->
+            <!-- 最新文章 -->
             <div class="article-card">
-                <img src="../images/article-placeholder.jpg" alt="文章配图" class="article-image">
+                <img src="../images/winter-concrete.jpg" alt="冬季混凝土施工" class="article-image">
                 <div class="article-info">
-                    <h2 class="article-title">济南混凝土行业发展趋势分析</h2>
-                    <p class="article-excerpt">近年来，济南市混凝土行业发展迅速，特别是在历下区、市中区等核心区域，对高品质商品混凝土的需求持续增长...</p>
+                    <h2 class="article-title">
+                        <a href="winter-concrete-guide.html">冬季混凝土浇筑施工技术指南</a>
+                    </h2>
+                    <p class="article-excerpt">详细解析冬季混凝土施工的温度控制、配合比优化、养护措施等关键技术要点，助力工程质量提升。</p>
                     <div class="article-meta">
-                        <span class="category">行业动态</span>
-                        <span class="date">2024-01-01</span>
+                        <span class="category">技术指南</span>
+                        <span class="date">2025-03-12</span>
                     </div>
                 </div>
             </div>
 
-            <!-- 更多文章卡片 -->
+            <div class="article-card">
+                <img src="../images/article1.jpg" loading="lazy" alt="济南混凝土行业发展趋势" class="article-image">
+                <div class="article-info">
+                    <h2 class="article-title"><a href="industry-trend.html">2024年济南混凝土行业发展趋势分析</a></h2>
+                    <p class="article-excerpt">随着济南市城市建设的快速发展，混凝土行业迎来了新的发展机遇。本文从多个角度分析2024年济南混凝土行业的发展趋势，为建筑工程选材提供参考。</p>
+                    <div class="article-meta">
+                        <span class="category">行业动态</span>
+                        <span class="date">2024-01-20</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="article-card">
+                <img src="../images/article2.jpg" loading="lazy" alt="商品混凝土选型技术指南" class="article-image">
+                <div class="article-info">
+                    <h2 class="article-title"><a href="technical-guide.html">商品混凝土选型技术指南</a></h2>
+                    <p class="article-excerpt">详细介绍不同标号混凝土的特点和应用场景，包括抗压强度、抗渗性、和易性等性能指标，以及在济南各区域工程中的实际应用案例。</p>
+                    <div class="article-meta">
+                        <span class="category">技术文章</span>
+                        <span class="date">2024-01-18</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="article-card">
+                <img src="../images/article3.jpg" loading="lazy" alt="历下区商业综合体项目案例" class="article-image">
+                <div class="article-info">
+                    <h2 class="article-title"><a href="project-case.html">历下区某大型商业综合体混凝土供应案例</a></h2>
+                    <p class="article-excerpt">本案例详细介绍济南市历下区某大型商业综合体项目的混凝土供应情况。该项目是济南市2023年重点工程之一，总建筑面积超过20万平方米。</p>
+                    <div class="article-meta">
+                        <span class="category">工程案例</span>
+                        <span class="date">2024-01-15</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="article-card">
+                <img src="../images/green-tech.jpg" loading="lazy" alt="绿色混凝土技术创新" class="article-image">
+                <div class="article-info">
+                    <h2 class="article-title"><a href="green-technology.html">绿色混凝土技术创新与应用实践</a></h2>
+                    <p class="article-excerpt">探讨环保型混凝土材料的研发与应用，包括减少碳排放、提高资源利用率等创新技术，展示济南地区绿色建筑发展新趋势。</p>
+                    <div class="article-meta">
+                        <span class="category">技术指南</span>
+                        <span class="date">2024-01-10</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="article-card">
+                <img src="../images/quality-management.jpg" loading="lazy" alt="混凝土质量管理" class="article-image">
+                <div class="article-info">
+                    <h2 class="article-title"><a href="quality-management.html">混凝土生产质量管理体系解析</a></h2>
+                    <p class="article-excerpt">详细介绍济南钧华商砼的质量管理体系，从原材料把控到生产过程监控，全方位保障混凝土产品质量。</p>
+                    <div class="article-meta">
+                        <span class="category">技术文章</span>
+                        <span class="date">2024-01-05</span>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- 分页 -->

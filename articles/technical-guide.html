@@ -4,14 +4,198 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>商品混凝土选型技术指南 - 济南钧华商砼混凝土销售中心</title>
-    <meta name="description" content="详细介绍C30、C35、C40等不同标号混凝土的特点和应用场景，帮助您选择最适合的商品混凝土规格。">
+    <meta name="description" content="详细介绍C15、C20、C25、C30、C35、C40、C45、C50等不同标号混凝土的特点和应用场景，包括抗压强度、抗渗性、和易性等性能指标，以及在济南各区域工程中的实际应用案例。">
+    <meta name="keywords" content="济南混凝土,商品混凝土选型,混凝土标号,混凝土强度等级,
+    混凝土配合比,混凝土性能指标,混凝土施工技术,混凝土质量控制,
+    商砼,建筑混凝土,工程混凝土,泵送混凝土,
+    济南混凝土公司,济南混凝土厂家,济南混凝土价格">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <style>
-        /* 从article_template.html复制样式 */
+        /* 导航栏样式 */
+        .nav-bar {
+            background-color: #f8f9fa;
+            padding: 15px 0;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .nav-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-logo {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #333;
+            text-decoration: none;
+        }
+        .nav-logo:hover {
+            color: #007bff;
+        }
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+        .nav-links a {
+            color: #666;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+        }
+        .nav-links a:hover {
+            background-color: #e9ecef;
+            color: #007bff;
+        }
+        /* 文章基础样式 */
+        .article-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .article-header {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .article-title {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+        .article-meta {
+            color: #666;
+            font-size: 14px;
+        }
+        .article-meta span {
+            margin: 0 10px;
+        }
+        .article-content {
+            line-height: 1.8;
+            color: #444;
+        }
+        .article-content h2 {
+            color: #1e3c72;
+            margin: 30px 0 15px;
+            font-size: 22px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        .article-content h3 {
+            color: #2a5298;
+            margin: 20px 0 10px;
+            font-size: 18px;
+        }
+        .article-content p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        /* 分类部分样式 */
+        .grade-section, .performance-section {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .grade-section h3, .performance-section h3 {
+            color: #1e3c72;
+            margin-bottom: 10px;
+        }
+        /* 施工技巧样式 */
+        .construction-tips {
+            border: 1px solid #e0e0e0;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .construction-tips h3 {
+            color: #1e3c72;
+            margin-bottom: 10px;
+        }
+        /* 问答部分样式 */
+        .qa-section {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .qa-section h3 {
+            color: #1e3c72;
+            margin-bottom: 10px;
+        }
+        /* 专家引用样式 */
+        .expert-quote {
+            border-left: 4px solid #1e3c72;
+            padding: 15px 20px;
+            background: #f8f9fa;
+            margin: 20px 0;
+        }
+        .expert-quote footer {
+            color: #666;
+            margin-top: 10px;
+            font-style: italic;
+        }
+        /* 相关文章样式 */
+        .related-articles {
+            margin: 20px 0;
+        }
+        .related-articles ul {
+            list-style: none;
+            padding: 0;
+        }
+        .related-articles li {
+            margin-bottom: 10px;
+        }
+        .related-articles a {
+            color: #1e3c72;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .related-articles a:hover {
+            color: #0052a3;
+        }
+        /* 文章总结样式 */
+        .article-summary {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+            border: 1px solid #e0e0e0;
+        }
+        .article-summary h2 {
+            color: #1e3c72;
+            margin-bottom: 15px;
+            border-bottom: none;
+        }
+        /* 主图样式 */
+        .article-image {
+            margin: 20px 0;
+        }
+        .article-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .article-image .image-caption {
+            color: #666;
+            font-size: 14px;
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>
+    <!-- 添加导航栏 -->
+    <nav class="nav-bar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">济南钧华商砼</a>
+            <div class="nav-links">
+                <a href="../index.html"><i class="fas fa-home"></i> 首页</a>
+                <a href="list.html"><i class="fas fa-list"></i> 文章列表</a>
+            </div>
+        </div>
+    </nav>
     <div class="article-container">
         <article>
             <header class="article-header">
@@ -22,31 +206,94 @@
                 </div>
             </header>
 
+            <div class="article-image">
+                <img src="technical-guide.jpg" alt="商品混凝土浇筑施工" class="featured-image">
+                <p class="image-caption">专业施工人员进行混凝土浇筑作业</p>
+            </div>
+
             <div class="article-content">
-                <p>选择合适的商品混凝土对工程质量至关重要。本文将详细介绍不同标号混凝土的特点和适用场景，帮助您做出正确的选择。</p>
+                <p>选择合适的商品混凝土对工程质量至关重要。本文将详细介绍不同标号混凝土的特点和适用场景，帮助您做出正确的选择。同时结合济南本地工程实践经验，为您提供专业的技术建议。</p>
 
-                <h2>一、C30混凝土应用指南</h2>
-                <p>C30混凝土是济南地区使用最广泛的商品混凝土之一，适用于普通民用建筑的主体结构。在历下区、市中区的住宅项目中，C30混凝土因其性价比高、性能稳定而备受欢迎。</p>
+                <h2>一、混凝土标号详解</h2>
+                <div class="grade-section">
+                    <h3>1. 低强度混凝土（C15-C25）</h3>
+                    <p>主要用于非承重构件、垫层等。具有经济实惠的特点，在小型工程中应用广泛。</p>
+                    
+                    <h3>2. 中强度混凝土（C30-C35）</h3>
+                    <p>是济南地区最常用的混凝土标号，适用于普通住宅、商业建筑的主体结构。C30混凝土在历下区、市中区的住宅项目中使用最多，而C35在天桥区、槐荫区的商业项目中较为常见。</p>
+                    
+                    <h3>3. 高强度混凝土（C40-C50）</h3>
+                    <p>主要应用于高层建筑、桥梁等重要工程。在济南二环东路高架桥等项目中，C45-C50混凝土发挥了重要作用。</p>
+                </div>
 
-                <h2>二、C35混凝土技术特点</h2>
-                <p>C35混凝土强度更高，常用于商业建筑和公共设施。历城区的多个重点工程项目都采用C35混凝土，特别是在对承重要求较高的建筑部位。</p>
+                <h2>二、性能指标解析</h2>
+                <div class="performance-section">
+                    <h3>1. 抗压强度</h3>
+                    <p>是混凝土最基本的性能指标，数值越大表示承载能力越强。例如C30表示抗压强度达到30MPa。</p>
+                    
+                    <h3>2. 和易性</h3>
+                    <p>反映混凝土的流动性和工作性能，对泵送混凝土尤为重要。我们的搅拌站采用先进的外加剂调配技术，确保最佳和易性。</p>
+                    
+                    <h3>3. 抗渗性</h3>
+                    <p>对地下工程和防水要求高的项目极其重要。通过优化配合比和添加防水剂可以提高抗渗等级。</p>
 
-                <h2>三、C40混凝土高性能应用</h2>
-                <p>C40混凝土主要应用于高层建筑和特殊工程。泵送混凝土技术的进步使得C40混凝土的施工更加便捷，在济南的地标性建筑中得到广泛应用。</p>
+                    <h3>4. 耐久性</h3>
+                    <p>包括抗冻性、抗侵蚀性等，关系到建筑物的使用寿命。在济南的气候条件下，特别需要注意混凝土的抗冻性。</p>
+                </div>
 
-                <h2>四、混凝土配合比设计</h2>
-                <p>不同强度等级的混凝土需要精确的配合比设计。我们的搅拌站配备先进的自动化控制系统，确保每批商品混凝土都符合工程要求。</p>
+                <h2>三、配合比设计要点</h2>
+                <p>混凝土配合比设计需要考虑水泥标号、砂石粒径、水灰比等因素。我们的技术团队可以根据工程需求，设计出最优的配合比方案。特别是对于高层建筑，需要考虑泵送高度对配合比的影响。</p>
 
-                <h2>五、施工建议</h2>
-                <p>建筑混凝土和工程混凝土的浇筑需要注意气候条件。在济南的夏季，要特别注意混凝土的运输时间和浇筑工艺，确保混凝土质量。</p>
+                <h2>四、施工技术指导</h2>
+                <div class="construction-tips">
+                    <h3>1. 浇筑准备</h3>
+                    <p>检查模板、钢筋等，确保标高准确。商砼到场后要及时进行坍落度检测。</p>
+                    
+                    <h3>2. 浇筑过程</h3>
+                    <p>控制浇筑速度，注意振捣密实度。特别是在夏季施工时，要采取措施防止水分过快蒸发。</p>
+                    
+                    <h3>3. 养护要点</h3>
+                    <p>根据季节特点选择养护方案。冬季施工要特别注意保温养护，夏季要做好保湿工作。</p>
+                </div>
+
+                <h2>五、常见问题解答</h2>
+                <div class="qa-section">
+                    <h3>1. 混凝土标号越高越好吗？</h3>
+                    <p>不一定。应根据工程实际需求选择合适标号，过高会造成不必要的成本增加。</p>
+                    
+                    <h3>2. 如何判断混凝土质量？</h3>
+                    <p>通过抗压强度试验、坍落度测试等方法。我们提供免费的见证取样服务。</p>
+                    
+                    <h3>3. 泵送混凝土有什么特殊要求？</h3>
+                    <p>需要良好的和易性和适当的石子粒径，我们的产品都经过泵送性能优化。</p>
+                </div>
+
+                <h2>六、专家建议</h2>
+                <blockquote class="expert-quote">
+                    <p>"选择混凝土不仅要看强度等级，更要考虑工程实际需求和施工条件。建议选择有经验的搅拌站，并做好技术交底和质量控制。"</p>
+                    <footer>——济南市混凝土工程技术专家</footer>
+                </blockquote>
+
+                <h2>七、相关阅读</h2>
+                <div class="related-articles">
+                    <ul>
+                        <li><a href="project-case.html">历下区某大型商业综合体混凝土供应案例</a></li>
+                        <li><a href="industry-trend.html">2024年济南混凝土行业发展趋势分析</a></li>
+                    </ul>
+                </div>
+
+                <div class="article-summary">
+                    <h2>小结</h2>
+                    <p>选择合适的混凝土标号和配合比是工程成功的关键。建议根据本文提供的技术指南，结合实际工程需求，选择合适的产品。如有疑问，欢迎咨询我们的技术团队。</p>
+                </div>
             </div>
         </article>
 
         <div class="related-articles">
             <h3>相关文章</h3>
             <ul>
-                <li><a href="industry-trend.html">2024年济南混凝土行业发展趋势分析</a></li>
                 <li><a href="project-case.html">历下区某大型商业综合体混凝土供应案例</a></li>
+                <li><a href="industry-trend.html">2024年济南混凝土行业发展趋势分析</a></li>
             </ul>
         </div>
     </div>
