@@ -7,7 +7,7 @@
     (function() {
       var hm = document.createElement("script");
       hm.src = "https://hm.baidu.com/hm.js?a5988b5014577e4dbdf885ca62672b8b";
-      var s = document.getElementsByTagName("script")[0]; 
+      var s = document.getElementsByTagName("script")[0];
       s.parentNode.insertBefore(hm, s);
     })();
     </script>
@@ -163,7 +163,7 @@
     <!-- 文章列表 -->
     <div class="articles-container">
         <h1>技术文章与行业动态</h1>
-        
+
         <!-- 分类筛选 -->
         <div class="category-filters">
             <button class="active">全部</button>
@@ -173,95 +173,124 @@
         </div>
 
         <!-- 文章列表 -->
-        <div class="article-list">
-            <!-- 最新文章 -->
-            <div class="article-card">
-                <img src="../images/winter-concrete.jpg" alt="冬季混凝土施工" class="article-image">
-                <div class="article-info">
-                    <h2 class="article-title">
-                        <a href="winter-concrete-guide.html">冬季混凝土浇筑施工技术指南</a>
-                    </h2>
-                    <p class="article-excerpt">详细解析冬季混凝土施工的温度控制、配合比优化、养护措施等关键技术要点，助力工程质量提升。</p>
-                    <div class="article-meta">
-                        <span class="category">技术指南</span>
-                        <span class="date">2025-03-12</span>
+        <div class="article-container">
+            <h1 class="page-title">技术文章</h1>
+
+            <div class="article-list">
+                <!-- 新添加的文章卡片 -->
+                <div class="article-card">
+                    <img src="../images/mixing-plant.jpg" loading="lazy" alt="济南混凝土搅拌站技术创新" class="article-image">
+                    <div class="article-info">
+                        <h2 class="article-title"><a href="mixing-plant-technology.html">济南混凝土搅拌站技术创新与发展</a></h2>
+                        <p class="article-excerpt">详细介绍济南混凝土搅拌站在设备升级、智能化控制、环保节能和质量管理等方面的技术创新，以及未来发展趋势。</p>
+                        <div class="article-meta">
+                            <span class="category">技术创新</span>
+                            <span class="date">2025-04-29</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="article-card">
+                    <img src="../images/concrete-price.jpg" loading="lazy" alt="济南混凝土价格分析" class="article-image">
+                    <div class="article-info">
+                        <h2 class="article-title"><a href="concrete-price-analysis.html">2024年济南混凝土价格分析与市场趋势</a></h2>
+                        <p class="article-excerpt">全面分析济南混凝土价格影响因素，包括不同区域的价格差异，以及各种标号混凝土的价格走势和选购建议。</p>
+                        <div class="article-meta">
+                            <span class="category">市场分析</span>
+                            <span class="date">2024-07-10</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 原有的文章卡片 -->
+                <div class="article-card">
+                    <img src="../images/winter-concrete.jpg" alt="冬季混凝土施工" class="article-image">
+                    <div class="article-info">
+                        <h2 class="article-title">
+                            <a href="winter-concrete-guide.html">冬季混凝土浇筑施工技术指南</a>
+                        </h2>
+                        <p class="article-excerpt">详细解析冬季混凝土施工的温度控制、配合比优化、养护措施等关键技术要点，助力工程质量提升。</p>
+                        <div class="article-meta">
+                            <span class="category">技术指南</span>
+                            <span class="date">2025-03-12</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="article-card">
+                    <img src="../images/article1.jpg" loading="lazy" alt="济南混凝土行业发展趋势" class="article-image">
+                    <div class="article-info">
+                        <h2 class="article-title"><a href="industry-trend.html">2024年济南混凝土行业发展趋势分析</a></h2>
+                        <p class="article-excerpt">随着济南市城市建设的快速发展，混凝土行业迎来了新的发展机遇。本文从多个角度分析2024年济南混凝土行业的发展趋势，为建筑工程选材提供参考。</p>
+                        <div class="article-meta">
+                            <span class="category">行业动态</span>
+                            <span class="date">2024-01-20</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="article-card">
+                    <img src="../images/article2.jpg" loading="lazy" alt="商品混凝土选型技术指南" class="article-image">
+                    <div class="article-info">
+                        <h2 class="article-title"><a href="technical-guide.html">商品混凝土选型技术指南</a></h2>
+                        <p class="article-excerpt">详细介绍不同标号混凝土的特点和应用场景，包括抗压强度、抗渗性、和易性等性能指标，以及在济南各区域工程中的实际应用案例。</p>
+                        <div class="article-meta">
+                            <span class="category">技术文章</span>
+                            <span class="date">2024-01-18</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="article-card">
+                    <img src="../images/article3.jpg" loading="lazy" alt="历下区商业综合体项目案例" class="article-image">
+                    <div class="article-info">
+                        <h2 class="article-title"><a href="project-case.html">历下区某大型商业综合体混凝土供应案例</a></h2>
+                        <p class="article-excerpt">本案例详细介绍济南市历下区某大型商业综合体项目的混凝土供应情况。该项目是济南市2023年重点工程之一，总建筑面积超过20万平方米。</p>
+                        <div class="article-meta">
+                            <span class="category">工程案例</span>
+                            <span class="date">2024-01-15</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="article-card">
+                    <img src="../images/green-tech.jpg" loading="lazy" alt="绿色混凝土技术创新" class="article-image">
+                    <div class="article-info">
+                        <h2 class="article-title"><a href="green-technology.html">绿色混凝土技术创新与应用实践</a></h2>
+                        <p class="article-excerpt">探讨环保型混凝土材料的研发与应用，包括减少碳排放、提高资源利用率等创新技术，展示济南地区绿色建筑发展新趋势。</p>
+                        <div class="article-meta">
+                            <span class="category">技术指南</span>
+                            <span class="date">2024-01-10</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="article-card">
+                    <img src="../images/quality-management.jpg" loading="lazy" alt="混凝土质量管理" class="article-image">
+                    <div class="article-info">
+                        <h2 class="article-title"><a href="quality-management.html">混凝土生产质量管理体系解析</a></h2>
+                        <p class="article-excerpt">详细介绍济南钧华商砼的质量管理体系，从原材料把控到生产过程监控，全方位保障混凝土产品质量。</p>
+                        <div class="article-meta">
+                            <span class="category">技术文章</span>
+                            <span class="date">2024-01-05</span>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="article-card">
-                <img src="../images/article1.jpg" loading="lazy" alt="济南混凝土行业发展趋势" class="article-image">
-                <div class="article-info">
-                    <h2 class="article-title"><a href="industry-trend.html">2024年济南混凝土行业发展趋势分析</a></h2>
-                    <p class="article-excerpt">随着济南市城市建设的快速发展，混凝土行业迎来了新的发展机遇。本文从多个角度分析2024年济南混凝土行业的发展趋势，为建筑工程选材提供参考。</p>
-                    <div class="article-meta">
-                        <span class="category">行业动态</span>
-                        <span class="date">2024-01-20</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="article-card">
-                <img src="../images/article2.jpg" loading="lazy" alt="商品混凝土选型技术指南" class="article-image">
-                <div class="article-info">
-                    <h2 class="article-title"><a href="technical-guide.html">商品混凝土选型技术指南</a></h2>
-                    <p class="article-excerpt">详细介绍不同标号混凝土的特点和应用场景，包括抗压强度、抗渗性、和易性等性能指标，以及在济南各区域工程中的实际应用案例。</p>
-                    <div class="article-meta">
-                        <span class="category">技术文章</span>
-                        <span class="date">2024-01-18</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="article-card">
-                <img src="../images/article3.jpg" loading="lazy" alt="历下区商业综合体项目案例" class="article-image">
-                <div class="article-info">
-                    <h2 class="article-title"><a href="project-case.html">历下区某大型商业综合体混凝土供应案例</a></h2>
-                    <p class="article-excerpt">本案例详细介绍济南市历下区某大型商业综合体项目的混凝土供应情况。该项目是济南市2023年重点工程之一，总建筑面积超过20万平方米。</p>
-                    <div class="article-meta">
-                        <span class="category">工程案例</span>
-                        <span class="date">2024-01-15</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="article-card">
-                <img src="../images/green-tech.jpg" loading="lazy" alt="绿色混凝土技术创新" class="article-image">
-                <div class="article-info">
-                    <h2 class="article-title"><a href="green-technology.html">绿色混凝土技术创新与应用实践</a></h2>
-                    <p class="article-excerpt">探讨环保型混凝土材料的研发与应用，包括减少碳排放、提高资源利用率等创新技术，展示济南地区绿色建筑发展新趋势。</p>
-                    <div class="article-meta">
-                        <span class="category">技术指南</span>
-                        <span class="date">2024-01-10</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="article-card">
-                <img src="../images/quality-management.jpg" loading="lazy" alt="混凝土质量管理" class="article-image">
-                <div class="article-info">
-                    <h2 class="article-title"><a href="quality-management.html">混凝土生产质量管理体系解析</a></h2>
-                    <p class="article-excerpt">详细介绍济南钧华商砼的质量管理体系，从原材料把控到生产过程监控，全方位保障混凝土产品质量。</p>
-                    <div class="article-meta">
-                        <span class="category">技术文章</span>
-                        <span class="date">2024-01-05</span>
-                    </div>
-                </div>
+            <!-- 分页 -->
+            <div class="pagination">
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">下一页</a>
             </div>
         </div>
 
-        <!-- 分页 -->
-        <div class="pagination">
-            <a href="#" class="active">1</a>
-            <a href="#">2</a>
-            <a href="#">3</a>
-            <a href="#">下一页</a>
-        </div>
+        <!-- 页脚 -->
+        <footer>
+            <!-- 这里包含网站的页脚 -->
+        </footer>
     </div>
-
-    <!-- 页脚 -->
-    <footer>
-        <!-- 这里包含网站的页脚 -->
-    </footer>
 </body>
 </html>

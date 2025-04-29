@@ -7,13 +7,13 @@
     (function() {
       var hm = document.createElement("script");
       hm.src = "https://hm.baidu.com/hm.js?a5988b5014577e4dbdf885ca62672b8b";
-      var s = document.getElementsByTagName("script")[0]; 
+      var s = document.getElementsByTagName("script")[0];
       s.parentNode.insertBefore(hm, s);
     })();
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>济南钧华商砼混凝土有限公司-专业混凝土生产销售</title>
-    <meta name="description" content="济南钧华商砼混凝土搅拌站有限公司是专业的混凝土生产供应商，提供C30、C35等各型号优质商品混凝土，服务覆盖历下区、市中区、槐荫区等济南各区域。专业团队，品质保证，快速配送。联系电话：18668933108">"
+    <meta name="description" content="济南钧华商砼混凝土搅拌站有限公司是专业的混凝土生产供应商，提供C30、C35等各型号优质商品混凝土，服务覆盖历下区、市中区、槐荫区等济南各区域。专业团队，品质保证，快速配送。联系电话：18668933108">
     <meta name="keywords" content="济南混凝土,济南混凝土公司,济南商品混凝土,济南混凝土搅拌站,济南混凝土销售,历下区混凝土,市中区混凝土,槐荫区混凝土,历下区混凝土搅拌站,市中区混凝土搅拌站,槐荫区混凝土搅拌站,山东混凝土搅拌站,
     济南C30混凝土,济南C35混凝土,济南C40混凝土,济南泵送混凝土,济南商砼,济南建筑混凝土,济南工程混凝土,济南混凝土配合比,济南混凝土制品,济南搅拌站服务,混凝土搅拌站,济南混凝土价格,济南混凝土供应">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -164,7 +164,7 @@
         }
         .news-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(3, 1fr);
             gap: 30px;
             margin-top: 40px;
         }
@@ -230,6 +230,11 @@
         .news-read-more {
             color: #1e3c72;
             font-weight: 500;
+        }
+        @media (max-width: 1024px) {
+            .news-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
         }
         @media (max-width: 768px) {
             .news-grid {
@@ -416,6 +421,38 @@
                 <h2 class="section-title">最新动态</h2>
                 <div class="news-grid">
                     <div class="news-card">
+                        <a href="articles/mixing-plant-technology.html">
+                            <div class="news-image">
+                                <img src="images/mixing-plant.jpg" alt="济南混凝土搅拌站技术创新与发展" loading="lazy">
+                            </div>
+                            <div class="news-content">
+                                <div class="news-tag">技术创新</div>
+                                <h3 class="news-title">济南混凝土搅拌站技术创新与发展</h3>
+                                <p class="news-excerpt">详细介绍济南混凝土搅拌站在设备升级、智能化控制、环保节能和质量管理等方面的技术创新，以及未来发展趋势。</p>
+                                <div class="news-meta">
+                                    <span class="news-date">2025-04-29</span>
+                                    <span class="news-read-more">阅读更多 →</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="news-card">
+                        <a href="articles/concrete-price-analysis.html">
+                            <div class="news-image">
+                                <img src="images/concrete-price.jpg" alt="济南混凝土价格分析与市场趋势" loading="lazy">
+                            </div>
+                            <div class="news-content">
+                                <div class="news-tag">市场分析</div>
+                                <h3 class="news-title">2024年济南混凝土价格分析与市场趋势</h3>
+                                <p class="news-excerpt">全面分析济南混凝土价格影响因素，包括不同区域的价格差异，以及各种标号混凝土的价格走势和选购建议。</p>
+                                <div class="news-meta">
+                                    <span class="news-date">2024-07-10</span>
+                                    <span class="news-read-more">阅读更多 →</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="news-card">
                         <a href="articles/quality-management.html">
                             <div class="news-image">
                                 <img src="images/quality-management.jpg" alt="济南混凝土企业如何提升产品质量管理" loading="lazy">
@@ -426,6 +463,22 @@
                                 <p class="news-excerpt">深入分析济南混凝土企业如何通过完善质量管理体系、原材料把控、生产过程监控等方面提升产品质量。</p>
                                 <div class="news-meta">
                                     <span class="news-date">2025-03-12</span>
+                                    <span class="news-read-more">阅读更多 →</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="news-card">
+                        <a href="articles/winter-concrete-guide.html">
+                            <div class="news-image">
+                                <img src="images/winter-concrete.jpg" alt="冬季混凝土浇筑施工技术指南" loading="lazy">
+                            </div>
+                            <div class="news-content">
+                                <div class="news-tag">技术指南</div>
+                                <h3 class="news-title">冬季混凝土浇筑施工技术指南</h3>
+                                <p class="news-excerpt">详细解析冬季混凝土施工的温度控制、配合比优化、养护措施等关键技术要点，助力工程质量提升。</p>
+                                <div class="news-meta">
+                                    <span class="news-date">2025-01-14</span>
                                     <span class="news-read-more">阅读更多 →</span>
                                 </div>
                             </div>
@@ -457,7 +510,7 @@
                                 <h3 class="news-title">济南某大型商业综合体项目施工案例</h3>
                                 <p class="news-excerpt">展示我司在大型商业项目中的混凝土供应及技术支持服务案例。</p>
                                 <div class="news-meta">
-                                    <span class="news-date">2024-12-20</span>
+                                    <span class="news-date">2024-01-15</span>
                                     <span class="news-read-more">阅读更多 →</span>
                                 </div>
                             </div>
@@ -526,22 +579,22 @@
                 <h2>联系我们</h2>
                 <div class="contact-info">
                     <div class="contact-card">
-                        <h3>历下区搅拌站</h3>
+                        <h3>济南市历下区混凝土搅拌站</h3>
                         <p>地址：济南市历下区花园东路</p>
                         <p>电话：18668933108</p>
-                        
+
                     </div>
                     <div class="contact-card">
-                        <h3>市中区搅拌站</h3>
+                        <h3>济南市市中区混凝土搅拌站</h3>
                         <p>地址：济南市市中区十六里河</p>
                         <p>电话：18668933108</p>
-                        
+
                     </div>
                     <div class="contact-card">
-                        <h3>槐荫区搅拌站</h3>
+                        <h3>济南市槐荫区混凝土搅拌站</h3>
                         <p>地址：济南市槐荫区经十西路</p>
                         <p>电话：18668933108</p>
-                        
+
                     </div>
                 </div>
             </div>
@@ -558,7 +611,7 @@
         document.addEventListener('DOMContentLoaded', function() {
             const menuToggle = document.querySelector('.menu-toggle');
             const navLinks = document.querySelector('.nav-links');
-            
+
             menuToggle.addEventListener('click', function() {
                 menuToggle.classList.toggle('active');
                 navLinks.classList.toggle('active');
