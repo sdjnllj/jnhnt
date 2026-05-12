@@ -1,0 +1,21 @@
+# IIS日志文件
+*.log
+LogFiles/
+
+# Windows缩略图
+Thumbs.db
+
+# SSL证书文件（敏感信息，不建议公开）
+*.pfx
+pfx-password.txt
+
+# 临时文件
+*.tmp
+*.bak
+
+# IDE配置
+.vscode/
+.idea/
+
+# 其他不需要版本控制的文件
+.DS_Store
