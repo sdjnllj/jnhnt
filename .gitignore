@@ -19,3 +19,6 @@ pfx-password.txt
 
 # 其他不需要版本控制的文件
 .DS_Store
+
+# 私有目录（包含API Key等敏感信息）
+../_private/
