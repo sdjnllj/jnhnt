@@ -22,3 +22,6 @@ pfx-password.txt
 
 # 私有目录（包含API Key等敏感信息）
 ../_private/
+
+# Lingma Skills（本地工作流文档，不上传到GitHub）
+.lingma/skills/
